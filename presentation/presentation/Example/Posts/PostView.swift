@@ -10,15 +10,29 @@ import UIKit
 import domain
 
 public class PostViewController: UIViewController {
-    var posts: [PostEntity] = []
+    private var posts: [PostEntity] = []
+    var postVM: PostVM
     
-    var collectionView: UICollectionView!
+    private var collectionView: UICollectionView!
+    
+    init(postVM: PostVM) {
+        self.postVM = postVM
+        super.init(nibName: nil, bundle: nil) /// init from UIViewController need to be triggered after all properties initiated
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
         
         setup()
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        self.getPosts()
     }
     
     private func setup() {
@@ -40,6 +54,14 @@ public class PostViewController: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+    }
+    
+    func getPosts() {
+        postVM.getPost { [weak self] postsFromVM in
+            guard let self = self else {return}
+            self.posts = postsFromVM.count > 0 ? postsFromVM : self.posts
+            self.collectionView.reloadData()
+        }
     }
     
 }
