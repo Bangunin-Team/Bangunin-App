@@ -13,7 +13,7 @@ public struct PostEntity: Identifiable {
     public let title: String?
     public let body: String
     
-    init(userID: Int?, id: Int?, title: String?, body: String) {
+    public init(userID: Int?, id: Int?, title: String?, body: String) {
         self.userID = userID
         self.id = id
         self.title = title
