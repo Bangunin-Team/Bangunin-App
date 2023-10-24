@@ -7,6 +7,7 @@
 
 import UIKit
 import presentation
+import domain
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        window?.rootViewController = UINavigationController(rootViewController: PostViewController())
+        let postInteractor = PostInteractor(postDomainRepo: DummyRepo())
+        let postVM = PostVM(postInteractor: postInteractor)
+        let rootViewController = PostViewController(postVM: postVM)
+        
+        window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
+    }
+    
+    private class DummyRepo: PostDomainRepoInterface {
+        func getPosts(handler: @escaping ([domain.PostEntity]) -> Void) {
+            handler([])
+        }
     }
 }
 

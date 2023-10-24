@@ -15,7 +15,7 @@ public class PostViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     
-    init(postVM: PostVM) {
+    public init(postVM: PostVM) {
         self.postVM = postVM
         super.init(nibName: nil, bundle: nil) /// init from UIViewController need to be triggered after all properties initiated
     }
@@ -42,12 +42,6 @@ public class PostViewController: UIViewController {
         setupForCollectionView()
         
         self.view.addSubview(collectionView)
-        
-        for id in 1...20 {
-            posts.append(PostEntity(userID: id, id: id, title: "Title \(id)", body: "Body \(id)"))
-        }
-        
-        collectionView.reloadData()
     }
     
     private func setupForCollectionView() {
@@ -59,7 +53,7 @@ public class PostViewController: UIViewController {
     func getPosts() {
         postVM.getPost { [weak self] postsFromVM in
             guard let self = self else {return}
-            self.posts = postsFromVM.count > 0 ? postsFromVM : self.posts
+            self.posts = postsFromVM
             self.collectionView.reloadData()
         }
     }

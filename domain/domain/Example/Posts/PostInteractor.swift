@@ -14,7 +14,7 @@ public protocol PostInteractorInterface {
 public class PostInteractor: PostInteractorInterface {
     let postDomainRepo: PostDomainRepoInterface
     
-    init(postDomainRepo: PostDomainRepoInterface) {
+    public init(postDomainRepo: PostDomainRepoInterface) {
         self.postDomainRepo = postDomainRepo
     }
     
