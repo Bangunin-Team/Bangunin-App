@@ -13,14 +13,24 @@ public class PostVM {
     
     private var postInteractor: PostInteractorInterface
     
-    init( postInteractor: PostInteractorInterface) {
+    public init( postInteractor: PostInteractorInterface) {
         self.postInteractor = postInteractor
     }
     
     func getPost(handler: @escaping ([PostEntity])-> Void) {
-        postInteractor.getPosts { postDataModelFromDomain in
-            self.posts = postDataModelFromDomain
-            handler(postDataModelFromDomain)
+        postInteractor.getPosts { [weak self] postDataModelFromDomain in
+            guard let self = self else { return }
+            
+            self.posts = postDataModelFromDomain.count > 0 ? postDataModelFromDomain : populateDummyPosts()
+            handler(self.posts)
         }
+    }
+    
+    private func populateDummyPosts(_ count: Int = 20) -> [PostEntity]{
+        var posts: [PostEntity] = []
+        (1...count).forEach { num in
+            posts.append(PostEntity(userID: num, id: num, title: "Title \(num)", body: "Body \(num)"))
+        }
+        return posts
     }
 }
