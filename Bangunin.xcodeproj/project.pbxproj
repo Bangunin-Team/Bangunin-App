@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025C10C747E6E0A7DF2EEC5A /* Pods_Bangunin_BanguninUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */; };
+		05A6D5282AE655EE00E92FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D5272AE655EE00E92FAC /* AppDelegate.swift */; };
+		05A6D52C2AE655EE00E92FAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D52B2AE655EE00E92FAC /* ViewController.swift */; };
+		05A6D5312AE655EF00E92FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A6D5302AE655EF00E92FAC /* Assets.xcassets */; };
+		05A6D5342AE655EF00E92FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A6D5322AE655EF00E92FAC /* LaunchScreen.storyboard */; };
+		05A6D53F2AE655EF00E92FAC /* BanguninTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D53E2AE655EF00E92FAC /* BanguninTests.swift */; };
+		05A6D5492AE655EF00E92FAC /* BanguninUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D5482AE655EF00E92FAC /* BanguninUITests.swift */; };
+		05A6D54B2AE655EF00E92FAC /* BanguninUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D54A2AE655EF00E92FAC /* BanguninUITestsLaunchTests.swift */; };
+		05A6D61F2AE661CC00E92FAC /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D61E2AE661CC00E92FAC /* data.framework */; };
+		05A6D6202AE661CC00E92FAC /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D61E2AE661CC00E92FAC /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05A6D6232AE661D400E92FAC /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6222AE661D400E92FAC /* domain.framework */; };
+		05A6D6242AE661D400E92FAC /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6222AE661D400E92FAC /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05A6D6262AE661D900E92FAC /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; };
+		05A6D6272AE661D900E92FAC /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B245CC2D61127475DDFD523E /* Pods_BanguninTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */; };
+		ED9319410BF2B147D494A077 /* Pods_Bangunin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05A6D53B2AE655EF00E92FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A6D51C2AE655EE00E92FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A6D5232AE655EE00E92FAC;
+			remoteInfo = Bangunin;
+		};
+		05A6D5452AE655EF00E92FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A6D51C2AE655EE00E92FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A6D5232AE655EE00E92FAC;
+			remoteInfo = Bangunin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05A6D6212AE661CC00E92FAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05A6D6272AE661D900E92FAC /* presentation.framework in Embed Frameworks */,
+				05A6D6242AE661D400E92FAC /* domain.framework in Embed Frameworks */,
+				05A6D6202AE661CC00E92FAC /* data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05A6D5242AE655EE00E92FAC /* Bangunin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bangunin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6D5272AE655EE00E92FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05A6D52B2AE655EE00E92FAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05A6D5302AE655EF00E92FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05A6D5332AE655EF00E92FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05A6D5352AE655EF00E92FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A6D53A2AE655EF00E92FAC /* BanguninTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanguninTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6D53E2AE655EF00E92FAC /* BanguninTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanguninTests.swift; sourceTree = "<group>"; };
+		05A6D5442AE655EF00E92FAC /* BanguninUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanguninUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6D5482AE655EF00E92FAC /* BanguninUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanguninUITests.swift; sourceTree = "<group>"; };
+		05A6D54A2AE655EF00E92FAC /* BanguninUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanguninUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05A6D61E2AE661CC00E92FAC /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6D6222AE661D400E92FAC /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6D6252AE661D900E92FAC /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFA960853C9D46FED1E898D /* Pods-BanguninTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanguninTests.debug.xcconfig"; path = "Target Support Files/Pods-BanguninTests/Pods-BanguninTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanguninTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A085211F3D29FE79ABCA28 /* Pods-Bangunin-BanguninUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin-BanguninUITests.release.xcconfig"; path = "Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56E8F96B788C75481D0051CF /* Pods-BanguninTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanguninTests.release.xcconfig"; path = "Target Support Files/Pods-BanguninTests/Pods-BanguninTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AC827AA43A7E9E50C0D164F /* Pods-Bangunin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.debug.xcconfig"; sourceTree = "<group>"; };
+		926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin_BanguninUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B188972313EC2CC33EBBE3F7 /* Pods-Bangunin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.release.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.release.xcconfig"; sourceTree = "<group>"; };
+		CF60B09F03291855D76D6E57 /* Pods-Bangunin-BanguninUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin-BanguninUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05A6D5212AE655EE00E92FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A6D61F2AE661CC00E92FAC /* data.framework in Frameworks */,
+				05A6D6232AE661D400E92FAC /* domain.framework in Frameworks */,
+				05A6D6262AE661D900E92FAC /* presentation.framework in Frameworks */,
+				ED9319410BF2B147D494A077 /* Pods_Bangunin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5372AE655EF00E92FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B245CC2D61127475DDFD523E /* Pods_BanguninTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5412AE655EF00E92FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025C10C747E6E0A7DF2EEC5A /* Pods_Bangunin_BanguninUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05A6D51B2AE655EE00E92FAC = {
+			isa = PBXGroup;
+			children = (
+				05A6D5262AE655EE00E92FAC /* Bangunin */,
+				05A6D53D2AE655EF00E92FAC /* BanguninTests */,
+				05A6D5472AE655EF00E92FAC /* BanguninUITests */,
+				05A6D5252AE655EE00E92FAC /* Products */,
+				EB991C4A0112B6416078AC42 /* Pods */,
+				656654D74F1549CFAEDCFBBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05A6D5252AE655EE00E92FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05A6D5242AE655EE00E92FAC /* Bangunin.app */,
+				05A6D53A2AE655EF00E92FAC /* BanguninTests.xctest */,
+				05A6D5442AE655EF00E92FAC /* BanguninUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05A6D5262AE655EE00E92FAC /* Bangunin */ = {
+			isa = PBXGroup;
+			children = (
+				05A6D5272AE655EE00E92FAC /* AppDelegate.swift */,
+				05A6D52B2AE655EE00E92FAC /* ViewController.swift */,
+				05A6D5302AE655EF00E92FAC /* Assets.xcassets */,
+				05A6D5322AE655EF00E92FAC /* LaunchScreen.storyboard */,
+				05A6D5352AE655EF00E92FAC /* Info.plist */,
+			);
+			path = Bangunin;
+			sourceTree = "<group>";
+		};
+		05A6D53D2AE655EF00E92FAC /* BanguninTests */ = {
+			isa = PBXGroup;
+			children = (
+				05A6D53E2AE655EF00E92FAC /* BanguninTests.swift */,
+			);
+			path = BanguninTests;
+			sourceTree = "<group>";
+		};
+		05A6D5472AE655EF00E92FAC /* BanguninUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05A6D5482AE655EF00E92FAC /* BanguninUITests.swift */,
+				05A6D54A2AE655EF00E92FAC /* BanguninUITestsLaunchTests.swift */,
+			);
+			path = BanguninUITests;
+			sourceTree = "<group>";
+		};
+		656654D74F1549CFAEDCFBBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05A6D6252AE661D900E92FAC /* presentation.framework */,
+				05A6D6222AE661D400E92FAC /* domain.framework */,
+				05A6D61E2AE661CC00E92FAC /* data.framework */,
+				9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */,
+				926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */,
+				3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB991C4A0112B6416078AC42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AC827AA43A7E9E50C0D164F /* Pods-Bangunin.debug.xcconfig */,
+				B188972313EC2CC33EBBE3F7 /* Pods-Bangunin.release.xcconfig */,
+				CF60B09F03291855D76D6E57 /* Pods-Bangunin-BanguninUITests.debug.xcconfig */,
+				41A085211F3D29FE79ABCA28 /* Pods-Bangunin-BanguninUITests.release.xcconfig */,
+				0AFA960853C9D46FED1E898D /* Pods-BanguninTests.debug.xcconfig */,
+				56E8F96B788C75481D0051CF /* Pods-BanguninTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05A6D5232AE655EE00E92FAC /* Bangunin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A6D54E2AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "Bangunin" */;
+			buildPhases = (
+				0203B63DD8A5735A0652B93F /* [CP] Check Pods Manifest.lock */,
+				05A6D5202AE655EE00E92FAC /* Sources */,
+				05A6D5212AE655EE00E92FAC /* Frameworks */,
+				05A6D5222AE655EE00E92FAC /* Resources */,
+				05A6D6212AE661CC00E92FAC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bangunin;
+			productName = Bangunin;
+			productReference = 05A6D5242AE655EE00E92FAC /* Bangunin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05A6D5392AE655EF00E92FAC /* BanguninTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A6D5512AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "BanguninTests" */;
+			buildPhases = (
+				DF4A0E962530CF1293F9B20C /* [CP] Check Pods Manifest.lock */,
+				05A6D5362AE655EF00E92FAC /* Sources */,
+				05A6D5372AE655EF00E92FAC /* Frameworks */,
+				05A6D5382AE655EF00E92FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A6D53C2AE655EF00E92FAC /* PBXTargetDependency */,
+			);
+			name = BanguninTests;
+			productName = BanguninTests;
+			productReference = 05A6D53A2AE655EF00E92FAC /* BanguninTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05A6D5432AE655EF00E92FAC /* BanguninUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A6D5542AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "BanguninUITests" */;
+			buildPhases = (
+				A47CA082CE979EB207838FD9 /* [CP] Check Pods Manifest.lock */,
+				05A6D5402AE655EF00E92FAC /* Sources */,
+				05A6D5412AE655EF00E92FAC /* Frameworks */,
+				05A6D5422AE655EF00E92FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A6D5462AE655EF00E92FAC /* PBXTargetDependency */,
+			);
+			name = BanguninUITests;
+			productName = BanguninUITests;
+			productReference = 05A6D5442AE655EF00E92FAC /* BanguninUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05A6D51C2AE655EE00E92FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					05A6D5232AE655EE00E92FAC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					05A6D5392AE655EF00E92FAC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 05A6D5232AE655EE00E92FAC;
+					};
+					05A6D5432AE655EF00E92FAC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 05A6D5232AE655EE00E92FAC;
+					};
+				};
+			};
+			buildConfigurationList = 05A6D51F2AE655EE00E92FAC /* Build configuration list for PBXProject "Bangunin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05A6D51B2AE655EE00E92FAC;
+			productRefGroup = 05A6D5252AE655EE00E92FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05A6D5232AE655EE00E92FAC /* Bangunin */,
+				05A6D5392AE655EF00E92FAC /* BanguninTests */,
+				05A6D5432AE655EF00E92FAC /* BanguninUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A6D5222AE655EE00E92FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A6D5342AE655EF00E92FAC /* LaunchScreen.storyboard in Resources */,
+				05A6D5312AE655EF00E92FAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5382AE655EF00E92FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5422AE655EF00E92FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0203B63DD8A5735A0652B93F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bangunin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47CA082CE979EB207838FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bangunin-BanguninUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4A0E962530CF1293F9B20C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BanguninTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05A6D5202AE655EE00E92FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A6D52C2AE655EE00E92FAC /* ViewController.swift in Sources */,
+				05A6D5282AE655EE00E92FAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5362AE655EF00E92FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A6D53F2AE655EF00E92FAC /* BanguninTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A6D5402AE655EF00E92FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A6D54B2AE655EF00E92FAC /* BanguninUITestsLaunchTests.swift in Sources */,
+				05A6D5492AE655EF00E92FAC /* BanguninUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05A6D53C2AE655EF00E92FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A6D5232AE655EE00E92FAC /* Bangunin */;
+			targetProxy = 05A6D53B2AE655EF00E92FAC /* PBXContainerItemProxy */;
+		};
+		05A6D5462AE655EF00E92FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A6D5232AE655EE00E92FAC /* Bangunin */;
+			targetProxy = 05A6D5452AE655EF00E92FAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05A6D5322AE655EF00E92FAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05A6D5332AE655EF00E92FAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05A6D54C2AE655EF00E92FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05A6D54D2AE655EF00E92FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05A6D54F2AE655EF00E92FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC827AA43A7E9E50C0D164F /* Pods-Bangunin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bangunin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.Bangunin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05A6D5502AE655EF00E92FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B188972313EC2CC33EBBE3F7 /* Pods-Bangunin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bangunin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.Bangunin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05A6D5522AE655EF00E92FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFA960853C9D46FED1E898D /* Pods-BanguninTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.BanguninTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bangunin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bangunin";
+			};
+			name = Debug;
+		};
+		05A6D5532AE655EF00E92FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E8F96B788C75481D0051CF /* Pods-BanguninTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.BanguninTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bangunin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bangunin";
+			};
+			name = Release;
+		};
+		05A6D5552AE655EF00E92FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF60B09F03291855D76D6E57 /* Pods-Bangunin-BanguninUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.BanguninUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bangunin;
+			};
+			name = Debug;
+		};
+		05A6D5562AE655EF00E92FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A085211F3D29FE79ABCA28 /* Pods-Bangunin-BanguninUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.BanguninUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bangunin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05A6D51F2AE655EE00E92FAC /* Build configuration list for PBXProject "Bangunin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A6D54C2AE655EF00E92FAC /* Debug */,
+				05A6D54D2AE655EF00E92FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A6D54E2AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "Bangunin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A6D54F2AE655EF00E92FAC /* Debug */,
+				05A6D5502AE655EF00E92FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A6D5512AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "BanguninTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A6D5522AE655EF00E92FAC /* Debug */,
+				05A6D5532AE655EF00E92FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A6D5542AE655EF00E92FAC /* Build configuration list for PBXNativeTarget "BanguninUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A6D5552AE655EF00E92FAC /* Debug */,
+				05A6D5562AE655EF00E92FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05A6D51C2AE655EE00E92FAC /* Project object */;
+}
