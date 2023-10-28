@@ -54,7 +54,9 @@ public class PostViewController: UIViewController {
         postVM.getPost { [weak self] postsFromVM in
             guard let self = self else {return}
             self.posts = postsFromVM
-            self.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
     }
     

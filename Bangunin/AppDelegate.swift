@@ -8,6 +8,7 @@
 import UIKit
 import presentation
 import domain
+import data
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        let postInteractor = PostInteractor(postDomainRepo: DummyRepo())
+        let remoteDS = PostRemoteDataSource(urlString: AppEnvironment.baseURL)
+        let postRepo = PostDataRepo(remote: remoteDS)
+        let postInteractor = PostInteractor(postDomainRepo: postRepo)
         let postVM = PostVM(postInteractor: postInteractor)
         let rootViewController = PostViewController(postVM: postVM)
         
@@ -35,3 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+
+class AppEnvironment {
+    static let baseURL = "https://jsonplaceholder.typicode.com/posts"
+}
