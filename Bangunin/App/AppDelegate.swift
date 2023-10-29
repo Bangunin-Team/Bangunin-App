@@ -19,11 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        let remoteDS = PostRemoteDataSource(urlString: AppEnvironment.baseURL)
-        let postRepo = PostDataRepo(remote: remoteDS)
-        let postInteractor = PostInteractor(postDomainRepo: postRepo)
-        let postVM = PostVM(postInteractor: postInteractor)
-        let rootViewController = PostViewController(postVM: postVM)
+        let rootViewController = PostsUIComposer.makePosts()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
