@@ -36,15 +36,16 @@ public class PostViewController: UIViewController {
     }
     
     private func setup() {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.frame.width, height: 100)
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         setupForCollectionView()
         
         self.view.addSubview(collectionView)
     }
     
     private func setupForCollectionView() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
@@ -73,6 +74,21 @@ extension PostViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.bodyLabel.text = posts[indexPath.row].body 
         return cell
     }
-    
-    
+}
+
+extension PostViewController: UICollectionViewDelegateFlowLayout {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let data = posts[indexPath.row]
+        
+        let cellWidth = collectionView.frame.size.width
+        let cell = PostCollectionViewCell()
+        cell.titleLabel.text = data.title
+        cell.bodyLabel.text = data.body
+        cell.titleLabel.sizeToFit() // important to update current view size
+        cell.bodyLabel.sizeToFit()
+        
+        let cellHeight = cell.titleLabel.frame.size.height + cell.bodyLabel.frame.size.height + 16
+        
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
 }
