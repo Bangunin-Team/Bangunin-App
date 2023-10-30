@@ -27,4 +27,11 @@ public class PostDataRepo: PostDomainRepoInterface {
             handler(postEntity)
         })
     }
+    
+    public func getPostByID(ID: Int, handler: @escaping (domain.PostEntity) -> Void) {
+        self.postRemoteDataSource?.getPostByID(ID: ID){ postDataModel in
+            var postEntity = postDataModel.convertToPostEntity()
+            handler(postEntity)
+        }
+    }
 }

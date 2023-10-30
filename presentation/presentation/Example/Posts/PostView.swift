@@ -12,6 +12,7 @@ import domain
 public class PostViewController: UIViewController {
     private var posts: [PostEntity] = []
     var postVM: PostVM
+    public var routeToDetail: (_ passDataClosure: @escaping () -> Int ) -> Void = { _ in }
     
     private var collectionView: UICollectionView!
     
@@ -73,6 +74,16 @@ extension PostViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.titleLabel.text = posts[indexPath.row].title ?? "Title"
         cell.bodyLabel.text = posts[indexPath.row].body 
         return cell
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // TODO: navigate to detail page
+        let dataPassingClossure: () -> Int = { [weak self] in
+            guard let self = self else { return 0 }
+            return self.posts[indexPath.row].id ?? 0
+        }
+        
+        self.routeToDetail(dataPassingClossure)
     }
 }
 

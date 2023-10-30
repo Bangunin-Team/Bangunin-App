@@ -10,6 +10,7 @@ import Foundation
 public protocol PostRemoteDataSourceInterface {
     init(urlString: String)
     func getPosts(_ handler: @escaping ([PostModel]) -> Void)
+    func getPostByID(ID:Int,_ handler: @escaping(PostModel) -> Void)
 }
 
 public class PostRemoteDataSource: PostRemoteDataSourceInterface {
@@ -28,6 +29,21 @@ public class PostRemoteDataSource: PostRemoteDataSourceInterface {
             guard let postModels = try? JSONDecoder().decode([PostModel].self, from: data) else { return handler([])}
             
             handler(postModels)
+        }
+        task.resume()
+    }
+    
+    public func getPostByID(ID:Int,_ handler: @escaping(PostModel) -> Void) {
+        let urlByID = "\(urlString!)/\(ID)"
+        let emptyResponse = PostModel(userID: 0, id: 0, title: "", body: "")
+        guard let url = URL(string: urlByID) else { return handler(emptyResponse)}
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+            guard let data = data else { return handler(emptyResponse) }
+            
+            guard let postModel = try? JSONDecoder().decode(PostModel.self, from: data) else { return handler(emptyResponse)}
+            
+            handler(postModel)
         }
         task.resume()
     }

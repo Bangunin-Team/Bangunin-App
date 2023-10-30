@@ -17,6 +17,25 @@ struct PostsUIComposer {
         let postRepo = PostDataRepo(remote: remoteDS)
         let postInteractor = PostInteractor(postDomainRepo: postRepo)
         let postVM = PostVM(postInteractor: postInteractor)
-        return PostViewController(postVM: postVM)
+        let controller = PostViewController(postVM: postVM)
+        
+        controller.routeToDetail = { [weak controller] passingClosure in
+            let destination = PostsUIComposer.makeDetail(passData: passingClosure)
+            controller?.navigationController?.pushViewController(destination, animated: true)
+        }
+        
+        return controller
+    }
+    
+    static func makeDetail( passData: @escaping() -> Int) -> UIViewController {
+        let remoteDS = PostRemoteDataSource(urlString: AppEnvironment.baseURL)
+        let postRepo = PostDataRepo(remote: remoteDS)
+        let postInteractor = PostInteractor(postDomainRepo: postRepo)
+        let postDetailVM = PostDetailVM(postInteractor: postInteractor)
+        let controller =  PostDetailViewController(postDetailVM: postDetailVM)
+        
+        controller.passDataRoute = passData
+        
+        return controller
     }
 }

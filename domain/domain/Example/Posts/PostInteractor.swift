@@ -9,6 +9,7 @@ import Foundation
 
 public protocol PostInteractorInterface {
     func getPosts(handler: @escaping ([PostEntity]) -> Void)
+    func getPostByID(ID: Int, handler: @escaping (PostEntity) -> Void)
 }
 
 public class PostInteractor: PostInteractorInterface {
@@ -22,6 +23,12 @@ public class PostInteractor: PostInteractorInterface {
     public func getPosts(handler: @escaping ([PostEntity]) -> Void) {
         postDomainRepo.getPosts { postDomainModelArray in
             handler(postDomainModelArray)
+        }
+    }
+    
+    public func getPostByID(ID: Int, handler: @escaping (PostEntity) -> Void) {
+        postDomainRepo.getPostByID(ID:ID) { postDomainModel in
+            handler(postDomainModel)
         }
     }
 }

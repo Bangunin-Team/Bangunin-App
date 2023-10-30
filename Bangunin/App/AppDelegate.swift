@@ -26,12 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
-    
-    private class DummyRepo: PostDomainRepoInterface {
-        func getPosts(handler: @escaping ([domain.PostEntity]) -> Void) {
-            handler([])
-        }
-    }
 }
 
 
