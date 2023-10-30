@@ -6,9 +6,6 @@
 //
 
 import UIKit
-import presentation
-import domain
-import data
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
-class AppEnvironment {
+struct AppEnvironment {
     static let baseURL = "https://jsonplaceholder.typicode.com/posts"
 }
