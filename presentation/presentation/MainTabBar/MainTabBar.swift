@@ -9,9 +9,14 @@ import Foundation
 import UIKit
 
 public class MainTabBarViewController: UITabBarController {
+    public var makeHomeViewController: () -> UIViewController = { HomeViewController() }
     public override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        self.setup()
     }
     
     public init() {
@@ -24,7 +29,7 @@ public class MainTabBarViewController: UITabBarController {
     
     private func setup() {
         self.tabBar.backgroundColor = .lightGray.withAlphaComponent(0.5)
-        let homeViewController = HomeViewController()
+        let homeViewController = makeHomeViewController()
         let alarmsViewController = AlarmsViewController()
         
         // Set the view controllers for the tab bar controller

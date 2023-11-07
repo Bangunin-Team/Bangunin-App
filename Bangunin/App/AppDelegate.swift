@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
+        
+        GMSServices.provideAPIKey(AppEnvironment.gmapsAPIKey)
         return true
     }
 }
@@ -28,4 +31,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 struct AppEnvironment {
     static let baseURL = "https://jsonplaceholder.typicode.com/posts"
+    static let gmapsAPIKey = "AIzaSyB4OROZaoseUp93gHBZTiwtGTUK2e6S-9g"
 }
