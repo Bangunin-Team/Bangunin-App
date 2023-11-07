@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        let rootViewController = PostsUIComposer.makePosts()
+        let rootViewController = MainTabBarUIComposer.makeTabBar()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()

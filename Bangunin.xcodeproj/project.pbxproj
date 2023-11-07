@@ -22,6 +22,7 @@
 		05A6D6262AE661D900E92FAC /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; };
 		05A6D6272AE661D900E92FAC /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B24D052AEE2A3B00E3E99F /* PostsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B24D042AEE2A3B00E3E99F /* PostsUIComposer.swift */; };
+		AC616C012AF89EAE00B8BDFF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C002AF89EAE00B8BDFF /* MainTabBar.swift */; };
 		B245CC2D61127475DDFD523E /* Pods_BanguninTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */; };
 		ED9319410BF2B147D494A077 /* Pods_Bangunin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		6AC827AA43A7E9E50C0D164F /* Pods-Bangunin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.debug.xcconfig"; sourceTree = "<group>"; };
 		926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin_BanguninUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC616C002AF89EAE00B8BDFF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		B188972313EC2CC33EBBE3F7 /* Pods-Bangunin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.release.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.release.xcconfig"; sourceTree = "<group>"; };
 		CF60B09F03291855D76D6E57 /* Pods-Bangunin-BanguninUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin-BanguninUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 		05A6D5262AE655EE00E92FAC /* Bangunin */ = {
 			isa = PBXGroup;
 			children = (
+				AC616BFF2AF89E9100B8BDFF /* Features */,
 				05B24D032AEE2A2400E3E99F /* Example */,
 				05B24D022AEE29B900E3E99F /* App */,
 				05A6D5352AE655EF00E92FAC /* Info.plist */,
@@ -196,6 +199,14 @@
 				3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC616BFF2AF89E9100B8BDFF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AC616C002AF89EAE00B8BDFF /* MainTabBar.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		EB991C4A0112B6416078AC42 /* Pods */ = {
@@ -414,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC616C012AF89EAE00B8BDFF /* MainTabBar.swift in Sources */,
 				05B24D052AEE2A3B00E3E99F /* PostsUIComposer.swift in Sources */,
 				05A6D52C2AE655EE00E92FAC /* ViewController.swift in Sources */,
 				05A6D5282AE655EE00E92FAC /* AppDelegate.swift in Sources */,
@@ -591,7 +603,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				DEVELOPMENT_TEAM = RFM24B46AF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bangunin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -603,7 +615,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.Bangunin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banguninapp.bangunin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -619,7 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLX6KD3AF8;
+				DEVELOPMENT_TEAM = RFM24B46AF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bangunin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -631,7 +643,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fauziarda.personal.Bangunin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banguninapp.bangunin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
