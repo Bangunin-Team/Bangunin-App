@@ -18,6 +18,9 @@
 		05B24D012AE672C900E3E99F /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B24D002AE672C900E3E99F /* PostCollectionViewCell.swift */; };
 		AC616BF42AEF963700B8BDFF /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616BF32AEF963700B8BDFF /* PostDetailView.swift */; };
 		AC616BF62AEF97D700B8BDFF /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616BF52AEF97D700B8BDFF /* PostDetailVM.swift */; };
+		AC666B432B0B078900363E35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC666B422B0B078900363E35 /* HomeViewController.swift */; };
+		AC666B452B0B081100363E35 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC666B442B0B081100363E35 /* MainTabBar.swift */; };
+		AC666B472B0B082600363E35 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC666B462B0B082600363E35 /* AlarmsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		05B24D002AE672C900E3E99F /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC616BF32AEF963700B8BDFF /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		AC616BF52AEF97D700B8BDFF /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
+		AC666B422B0B078900363E35 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC666B442B0B081100363E35 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		AC666B462B0B082600363E35 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		05A6D5D82AE65A4F00E92FAC /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AC666B412B0B077900363E35 /* MainTabBar */,
 				05B24CF92AE66F8700E3E99F /* Example */,
 				05A6D5D92AE65A4F00E92FAC /* presentation.h */,
 				05A6D5DA2AE65A4F00E92FAC /* presentation.docc */,
@@ -157,6 +164,16 @@
 				AC616BF52AEF97D700B8BDFF /* PostDetailVM.swift */,
 			);
 			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		AC666B412B0B077900363E35 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AC666B422B0B078900363E35 /* HomeViewController.swift */,
+				AC666B442B0B081100363E35 /* MainTabBar.swift */,
+				AC666B462B0B082600363E35 /* AlarmsViewController.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +290,10 @@
 				AC616BF42AEF963700B8BDFF /* PostDetailView.swift in Sources */,
 				05B24CFC2AE66FBA00E3E99F /* PostVM.swift in Sources */,
 				AC616BF62AEF97D700B8BDFF /* PostDetailVM.swift in Sources */,
+				AC666B452B0B081100363E35 /* MainTabBar.swift in Sources */,
+				AC666B472B0B082600363E35 /* AlarmsViewController.swift in Sources */,
 				05B24CFE2AE66FCD00E3E99F /* PostView.swift in Sources */,
+				AC666B432B0B078900363E35 /* HomeViewController.swift in Sources */,
 				05A6D5DB2AE65A4F00E92FAC /* presentation.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

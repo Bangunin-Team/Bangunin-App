@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,16 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        let rootViewController = PostsUIComposer.makePosts()
+        let rootViewController = MainTabBarUIComposer.makeTabBar()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(AppEnvironment.dumpAPIKEY)
         return true
     }
 }
 
-
-struct AppEnvironment {
-    static let baseURL = "https://jsonplaceholder.typicode.com/posts"
-}

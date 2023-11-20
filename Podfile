@@ -6,6 +6,7 @@ target 'Bangunin' do
   use_frameworks!
 
   # Pods for Bangunin
+  pod 'GoogleMaps', '6.1.0'
 
   target 'BanguninTests' do
     inherit! :search_paths

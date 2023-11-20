@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		025C10C747E6E0A7DF2EEC5A /* Pods_Bangunin_BanguninUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */; };
 		05A6D5282AE655EE00E92FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D5272AE655EE00E92FAC /* AppDelegate.swift */; };
-		05A6D52C2AE655EE00E92FAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D52B2AE655EE00E92FAC /* ViewController.swift */; };
 		05A6D5312AE655EF00E92FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A6D5302AE655EF00E92FAC /* Assets.xcassets */; };
 		05A6D5342AE655EF00E92FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A6D5322AE655EF00E92FAC /* LaunchScreen.storyboard */; };
 		05A6D53F2AE655EF00E92FAC /* BanguninTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D53E2AE655EF00E92FAC /* BanguninTests.swift */; };
@@ -22,6 +21,8 @@
 		05A6D6262AE661D900E92FAC /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; };
 		05A6D6272AE661D900E92FAC /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6D6252AE661D900E92FAC /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B24D052AEE2A3B00E3E99F /* PostsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B24D042AEE2A3B00E3E99F /* PostsUIComposer.swift */; };
+		AC666B3D2B0B05F300363E35 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC666B3C2B0B05F300363E35 /* Environment.swift */; };
+		AC666B402B0B073000363E35 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC666B3F2B0B073000363E35 /* MainTabBar.swift */; };
 		B245CC2D61127475DDFD523E /* Pods_BanguninTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570C320D3B8A9D7E6A6E447 /* Pods_BanguninTests.framework */; };
 		ED9319410BF2B147D494A077 /* Pods_Bangunin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +63,6 @@
 /* Begin PBXFileReference section */
 		05A6D5242AE655EE00E92FAC /* Bangunin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bangunin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A6D5272AE655EE00E92FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05A6D52B2AE655EE00E92FAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05A6D5302AE655EF00E92FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A6D5332AE655EF00E92FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A6D5352AE655EF00E92FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		6AC827AA43A7E9E50C0D164F /* Pods-Bangunin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.debug.xcconfig"; sourceTree = "<group>"; };
 		926D247875B97D79B6F2DDED /* Pods_Bangunin_BanguninUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin_BanguninUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9715DCCC8A9AC23597583C69 /* Pods_Bangunin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangunin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC666B3C2B0B05F300363E35 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AC666B3F2B0B073000363E35 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		B188972313EC2CC33EBBE3F7 /* Pods-Bangunin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin.release.xcconfig"; path = "Target Support Files/Pods-Bangunin/Pods-Bangunin.release.xcconfig"; sourceTree = "<group>"; };
 		CF60B09F03291855D76D6E57 /* Pods-Bangunin-BanguninUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangunin-BanguninUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 		05A6D5262AE655EE00E92FAC /* Bangunin */ = {
 			isa = PBXGroup;
 			children = (
+				AC666B3E2B0B071600363E35 /* Features */,
 				05B24D032AEE2A2400E3E99F /* Example */,
 				05B24D022AEE29B900E3E99F /* App */,
 				05A6D5352AE655EF00E92FAC /* Info.plist */,
@@ -170,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				05A6D5272AE655EE00E92FAC /* AppDelegate.swift */,
-				05A6D52B2AE655EE00E92FAC /* ViewController.swift */,
+				AC666B3C2B0B05F300363E35 /* Environment.swift */,
 				05A6D5302AE655EF00E92FAC /* Assets.xcassets */,
 				05A6D5322AE655EF00E92FAC /* LaunchScreen.storyboard */,
 			);
@@ -198,6 +201,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC666B3E2B0B071600363E35 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AC666B3F2B0B073000363E35 /* MainTabBar.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		EB991C4A0112B6416078AC42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +234,7 @@
 				05A6D5212AE655EE00E92FAC /* Frameworks */,
 				05A6D5222AE655EE00E92FAC /* Resources */,
 				05A6D6212AE661CC00E92FAC /* Embed Frameworks */,
+				71DF6652B5AAAAF8FA6414F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +272,7 @@
 				05A6D5402AE655EF00E92FAC /* Sources */,
 				05A6D5412AE655EF00E92FAC /* Frameworks */,
 				05A6D5422AE655EF00E92FAC /* Resources */,
+				9259EA2FA6DD0467364CCA61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,6 +376,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		71DF6652B5AAAAF8FA6414F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bangunin/Pods-Bangunin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bangunin/Pods-Bangunin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bangunin/Pods-Bangunin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9259EA2FA6DD0467364CCA61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bangunin-BanguninUITests/Pods-Bangunin-BanguninUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A47CA082CE979EB207838FD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,8 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC666B402B0B073000363E35 /* MainTabBar.swift in Sources */,
 				05B24D052AEE2A3B00E3E99F /* PostsUIComposer.swift in Sources */,
-				05A6D52C2AE655EE00E92FAC /* ViewController.swift in Sources */,
+				AC666B3D2B0B05F300363E35 /* Environment.swift in Sources */,
 				05A6D5282AE655EE00E92FAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +549,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -564,7 +612,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
